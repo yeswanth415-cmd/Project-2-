@@ -1,5 +1,5 @@
 def greet(name):
-    return f"Hello, {name}! Welcome to DevOps from main branch."
+    return f"Hello, {name}! Welcome to DevOps from devlop branch."
 
 if __name__ == "__main__":
     user = "Yeswanth"

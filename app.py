@@ -1,8 +1,8 @@
-def greet(name):
-    return f"Hello, {name}! Welcome to DevOps from devlop branch."
+from flask import Flask
+app = Flask(__name__)
 
-if __name__ == "__main__":
-    user = "Yeswanth"
-    print(greet(user))
+@app.route("/")
+def hello():
+    return "Hello from Jenkins CI/CD + Kubernetes!"
 
-# 1 new line added 
+app.run(host="0.0.0.0", port=5000)

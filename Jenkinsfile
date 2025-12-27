@@ -14,6 +14,12 @@ pipeline {
                 echo "Building from develop branch"
                 sh 'echo "Build successful"'
             }
-        }   
+        } 
+        stage('Test') {
+            steps {
+                echo "Testing develop branch"
+                sh 'echo tests passed'
+            }
+        }
     }
 }
